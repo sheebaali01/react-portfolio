@@ -1,0 +1,265 @@
+{
+  "navItems": [
+    { "id": "about", "title": "About", "heading": "I am John Boka, full-stack developer from california.", "icon": "about-icon.png", "bgClass": "bg-gradient-1", "zIndex": 10, "marquee": "Everything about me." },
+    { "id": "services", "title": "Services", "heading": "10+ years experiences with over 800 projects delivered.", "icon": "services-icon.png", "bgClass": "bg-gradient-2", "zIndex": 9, "marquee": "What I do." },
+    { "id": "portfolio", "title": "Portfolio", "heading": "View my projects showcasing creativity and quality in web solutions.", "icon": "portfolio-icon.png", "bgClass": "bg-gradient-3", "zIndex": 8, "marquee": "My Featured Work." },
+    { "id": "resume", "title": "Resume", "heading": "Explore my experience, education, and achievements in web development.", "icon": "resume-icon.png", "bgClass": "bg-gradient-4", "zIndex": 7, "marquee": "My Experiences." },
+    { "id": "blog", "title": "Blog", "heading": "Read insights and updates on web development and trends.", "icon": "blog-icon.png", "bgClass": "bg-gradient-5", "zIndex": 6, "marquee": "My articles." },
+    { "id": "contact", "title": "Contact", "heading": "Let's connect and explore how we can work together to bring your vision to life.", "icon": "contact-icon.png", "bgClass": "bg-gradient-6", "zIndex": 5, "marquee": "Get in touch." }
+  ],
+  "personalInfo": {
+    "name": "John Boka",
+    "title": "Full-stack developer",
+    "bio": [
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi est dignissimos officiis eveniet rem quas, explicabo recusandae quam illo, adipisci, quae iste magni aperiam fugiat provident animi sapiente nulla sint.",
+      "Explicabo recusandae quam illo, adipisci, quae iste magni aperiam fugiat provident animi sapiente nulla sint."
+    ],
+    "social": [
+      { "platform": "facebook", "url": "#", "icon": "fa-brands fa-facebook-f" },
+      { "platform": "twitter", "url": "#", "icon": "fa-brands fa-x-twitter" },
+      { "platform": "youtube", "url": "#", "icon": "fa-brands fa-youtube" },
+      { "platform": "linkedin", "url": "#", "icon": "fa-brands fa-linkedin-in" },
+      { "platform": "instagram", "url": "#", "icon": "fa-brands fa-instagram" },
+      { "platform": "github", "url": "#", "icon": "fa-brands fa-github" }
+    ],
+    "scrambleText": [
+      "Full-stack developer",
+      "Css expert",
+      "Sometimes blogger",
+      "A proud dad"
+    ]
+  },
+  "about": {
+    "heading": "Hi, I am John Boka.",
+    "testimonialsHeading": "What my clients say about me",
+    "testimonials": [
+      {
+        "quote": "I was very impressed with the quality of work produced. The job was completed to specification, and he went above and beyond in bringing the PSD's to life. I will be using this contractor again.",
+        "author": "David I."
+      },
+      {
+        "quote": "Was a great experience with John Boka coded it exactly how I wanted, I'm picky so that says a lot! Thanks!",
+        "author": "Zackary"
+      },
+      {
+        "quote": "Excellent piece of web build work. Went above and beyond what I asked and very supportive throughout. Very happy with the outcome and will definitely use Boka again.",
+        "author": "Stuart"
+      }
+    ]
+  },
+  "services": {
+    "heading": "All solutions to help you grow your business.",
+    "subheading": "Quis voluptatibus inventore exercitationem harum minus officiis distinctio quia accusamus.",
+    "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse, recusandae nihil praesentium illo quisquam doloribus! Sapiente error itaque distinctio neque veritatis",
+    "items": [
+      {
+        "id": "service1",
+        "title": "Branding",
+        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
+        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
+        "image": "/src/assets/images/service1.jpg",
+        "mobImage": "/src/assets/images/service1-mob.jpg"
+      },
+      {
+        "id": "service2",
+        "title": "Html conversion",
+        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
+        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
+        "image": "/src/assets/images/service2.jpg",
+        "mobImage": "/src/assets/images/service2-mob.jpg"
+      },
+      {
+        "id": "service3",
+        "title": "React Js",
+        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
+        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
+        "image": "/src/assets/images/service3.jpg",
+        "mobImage": "/src/assets/images/service3-mob.jpg"
+      },
+      {
+        "id": "service4",
+        "title": "Mobile app",
+        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
+        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
+        "image": "/src/assets/images/service4.jpg",
+        "mobImage": "/src/assets/images/service4-mob.jpg"
+      },
+      {
+        "id": "service5",
+        "title": "eCommerce",
+        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
+        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
+        "image": "/src/assets/images/service5.jpg",
+        "mobImage": "/src/assets/images/service5-mob.jpg"
+      },
+      {
+        "id": "service6",
+        "title": "Copywriting",
+        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
+        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
+        "image": "/src/assets/images/service6.jpg",
+        "mobImage": "/src/assets/images/service6-mob.jpg"
+      }
+    ]
+  },
+  "portfolio": {
+    "heading": "Some of the greatest work of mine.",
+    "projects": [
+      {
+        "title": "Project Name 1",
+        "categories": ["Logo Design", "Branding", "UX/UI"],
+        "image": "/src/assets/images/portfolio1.webp",
+        "link": "#"
+      },
+      {
+        "title": "Project Name 2",
+        "categories": ["Logo Design", "Branding", "UX/UI"],
+        "image": "/src/assets/images/portfolio2.jpg",
+        "link": "#"
+      },
+      {
+        "title": "Project Name 3",
+        "categories": ["Logo Design", "Branding", "UX/UI"],
+        "image": "/src/assets/images/portfolio3.jpg",
+        "link": "#"
+      },
+      {
+        "title": "Project Name 4",
+        "categories": ["Logo Design", "Branding", "UX/UI"],
+        "image": "/src/assets/images/portfolio4.jpg",
+        "link": "#"
+      }
+    ],
+    "stats": [
+      { "label": "Projects completed", "value": "800", "suffix": "+" },
+      { "label": "Happy clients", "value": "50", "suffix": "" },
+      { "label": "Countries served", "value": "20", "suffix": "" },
+      { "label": "Awards won", "value": "3", "suffix": "" }
+    ],
+    "clients": [
+      "/src/assets/images/client-logo1.png",
+      "/src/assets/images/client-logo2.png",
+      "/src/assets/images/client-logo3.png",
+      "/src/assets/images/client-logo4.png"
+    ]
+  },
+  "resume": {
+    "heading": "Building quality web solutions with proven expertise.",
+    "experiences": [
+      {
+        "period": "2020 - Today",
+        "title": "Full Stack Developer",
+        "company": "Agency of Development",
+        "location": "INDIA",
+        "link": "#",
+        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+      },
+      {
+        "period": "2016 - 2020",
+        "title": "Senior Frontend Developer",
+        "company": "Agency of Development",
+        "location": "USA",
+        "link": "#",
+        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+      },
+      {
+        "period": "2014 - 2016",
+        "title": "Frontend Developer",
+        "company": "Agency of Development",
+        "location": "UK",
+        "link": "#",
+        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+      }
+    ],
+    "education": [
+      {
+        "period": "2012 - 2014",
+        "title": "Frontend Development",
+        "institution": "University of Development",
+        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+      },
+      {
+        "period": "2010 - 2012",
+        "title": "Frontend Development",
+        "institution": "University of Development",
+        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+      },
+      {
+        "period": "2006 - 2010",
+        "title": "Frontend Development",
+        "institution": "University of Development",
+        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+      }
+    ],
+    "awards": [
+      {
+        "title": "Best Frontend Developer",
+        "status": "Winner",
+        "year": "2024",
+        "logo": "/src/assets/images/awwwards-logo.png",
+        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+      },
+      {
+        "title": "Site of the month",
+        "status": "Nominee",
+        "year": "2023",
+        "logo": "/src/assets/images/webbyawards-logo.png",
+        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+      },
+      {
+        "title": "Site of the day",
+        "status": "Nominee",
+        "year": "2022",
+        "logo": "/src/assets/images/fwa-logo.png",
+        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+      }
+    ],
+    "skills": [
+      { "name": "Html", "percentage": "100", "icon": "/src/assets/images/html5-logo.svg" },
+      { "name": "CSS", "percentage": "95", "icon": "/src/assets/images/css3-logo.svg" },
+      { "name": "Javascript", "percentage": "80", "icon": "/src/assets/images/javascript-logo.svg" },
+      { "name": "Typescript", "percentage": "70", "icon": "/src/assets/images/typescript-logo.svg" },
+      { "name": "React js", "percentage": "85", "icon": "/src/assets/images/react-logo.svg" },
+      { "name": "Next js", "percentage": "75", "icon": "/src/assets/images/next-js-logo.svg" },
+      { "name": "Figma", "percentage": "80", "icon": "/src/assets/images/figma-logo.svg" },
+      { "name": "WordPress", "percentage": "90", "icon": "/src/assets/images/wordpress-logo.svg" }
+    ]
+  },
+  "blog": {
+    "heading": "My insights about our web world.",
+    "posts": [
+      {
+        "date": "15 aug, 2024",
+        "category": "Development",
+        "title": "Inventore voluptas sapiente deleniti molestias ipsam totam ipsa odit",
+        "excerpt": "Officiis distinctio quia accusamus sit quae dignissimos numquam, impedi quas...",
+        "image": "/src/assets/images/blog-img1.jpg",
+        "link": "#"
+      },
+      {
+        "date": "20 july, 2024",
+        "category": "Reactjs",
+        "title": "Consequatur quam rerum deserunt omnis reprehenderit doloribus aperiam",
+        "excerpt": "Officiis distinctio quia accusamus sit quae dignissimos numquam, impedi quas...",
+        "image": "/src/assets/images/blog-img2.jpg",
+        "link": "#"
+      },
+      {
+        "date": "30 june, 2024",
+        "category": "Design",
+        "title": "Sed fringilla pulvinar vel facilis fugiat quibusdam odio vitae mollis.",
+        "excerpt": "Officiis distinctio quia accusamus sit quae dignissimos numquam, impedi quas...",
+        "image": "/src/assets/images/blog-img3.jpg",
+        "link": "#"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Say hello and let's disucss your next project.",
+    "subheading": "Want to know more about me, tell me about your project or just to say hello? Drop me a line and I'll get back as soon as possible.",
+    "phone": "+0 987 654 3210",
+    "email": "boka@gmail.com",
+    "address": "3rd floor, Building Name, City Name, Country Name",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6539248.98817079!2d-129.36198337818405!3d36.84265159999556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1726227327963!5m2!1sen!2sin"
+  }
+}
