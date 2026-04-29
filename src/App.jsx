@@ -67,6 +67,40 @@ function App() {
       });
     });
     
+    // count up animation
+    const counts = gsap.utils.toArray('.active-page .count');
+    counts.forEach((count) => {
+      const targetValue = parseInt(count.getAttribute('data-target'));
+      ScrollTrigger.create({
+        trigger: count,
+        start: 'top 90%',
+        once: true,
+        onEnter: () => {
+          gsap.fromTo(count, 
+            { innerText: 0 },
+            {
+              innerText: targetValue,
+              duration: 2,
+              snap: { innerText: 1 },
+              ease: 'power1.inOut',
+              onUpdate: function() {
+                count.innerText = Math.ceil(count.innerText);
+              }
+            }
+          );
+        }
+      });
+    });
+
+    // hero text animation (fallback since SplitText is not available)
+    const heroHeading = document.querySelector('.active-page .page-heading');
+    if (heroHeading) {
+      gsap.fromTo(heroHeading, 
+        { y: 20, opacity: 0 }, 
+        { delay: 0.5, duration: 0.7, y: 0, opacity: 1, ease: 'power2.out' }
+      );
+    }
+    
     setTimeout(() => {
       ScrollTrigger.refresh();
     }, 100);
@@ -77,12 +111,20 @@ function App() {
       <Header />
       <Navbar activeSection={activeSection} setActiveSection={setActiveSection} navOpen={navOpen} setNavOpen={setNavOpen} />
       <main id="main" className="position-relative">
-        <About isActive={activeSection === 'about'} />
-        <Services isActive={activeSection === 'services'} />
-        <Portfolio isActive={activeSection === 'portfolio'} />
-        <Resume isActive={activeSection === 'resume'} />
-        <Blog isActive={activeSection === 'blog'} />
-        <Contact isActive={activeSection === 'contact'} />
+        <About isActive={activeSection === 'about'} setActiveSection={setActiveSection} />
+        <Services isActive={activeSection === 'services'} setActiveSection={setActiveSection} />
+        <Portfolio isActive={activeSection === 'portfolio'} setActiveSection={setActiveSection} />
+        <Resume isActive={activeSection === 'resume'} setActiveSection={setActiveSection} />
+        <Blog isActive={activeSection === 'blog'} setActiveSection={setActiveSection} />
+        <Contact isActive={activeSection === 'contact'} setActiveSection={setActiveSection} />
+        
+        {/* Page Transition Overlays */}
+        <div id="nav-overlay-about" className="nav-overlay bg-gradient-1"></div>
+        <div id="nav-overlay-services" className="nav-overlay bg-gradient-2"></div>
+        <div id="nav-overlay-portfolio" className="nav-overlay bg-gradient-3"></div>
+        <div id="nav-overlay-resume" className="nav-overlay bg-gradient-4"></div>
+        <div id="nav-overlay-blog" className="nav-overlay bg-gradient-5"></div>
+        <div id="nav-overlay-contact" className="nav-overlay bg-gradient-6"></div>
       </main>
     </>
   );

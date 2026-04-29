@@ -10,7 +10,7 @@ const Navbar = ({ activeSection, setActiveSection, navOpen, setNavOpen }) => {
     if (activeSection !== id) {
       setActiveSection(id);
       document.body.classList.add('page-active');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'instant' });
     }
   };
 
@@ -18,7 +18,7 @@ const Navbar = ({ activeSection, setActiveSection, navOpen, setNavOpen }) => {
     e.preventDefault();
     setActiveSection(null);
     document.body.classList.remove('page-active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
   const toggleNav = (e) => {
@@ -44,6 +44,8 @@ const Navbar = ({ activeSection, setActiveSection, navOpen, setNavOpen }) => {
             {navItems.map((item) => (
               <div
                 key={item.id}
+                id={`nav-${item.id}`}
+                data-target={`${item.id}-section`}
                 className={`navbar-block navbar-v2-block ${item.bgClass} z-index-${item.zIndex} ${activeSection === item.id ? 'full' : activeSection ? 'remove' : ''}`}
                 onClick={() => handleNavClick(item.id)}
               >

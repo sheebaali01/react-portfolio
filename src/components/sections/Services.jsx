@@ -1,7 +1,7 @@
 import React from 'react';
 import portfolioData from '../../data/portfolio.json';
 
-const Services = ({ isActive }) => {
+const Services = ({ isActive, setActiveSection }) => {
   const { services } = portfolioData;
 
   return (
@@ -102,6 +102,12 @@ const Services = ({ isActive }) => {
             className="page-nav-link page-nav-parent d-flex align-items-end w-100 position-relative overflow-hidden bg-gradient-1 z-index-2"
             data-target="about-section"
             data-overlay="nav-overlay-about"
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveSection('about');
+              document.body.classList.add('page-active');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+            }}
           >
             <h2 className="d-flex transition position-relative">
               About
@@ -116,6 +122,12 @@ const Services = ({ isActive }) => {
             className="page-nav-link page-nav-parent d-flex align-items-end w-100 position-relative overflow-hidden bg-gradient-3 z-index-1"
             data-target="portfolio-section"
             data-overlay="nav-overlay-portfolio"
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveSection('portfolio');
+              document.body.classList.add('page-active');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+            }}
           >
             <h2 className="d-flex transition position-relative">
               Portfolio

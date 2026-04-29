@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 
 import portfolioData from '../../data/portfolio.json';
 
-const Portfolio = ({ isActive }) => {
+const Portfolio = ({ isActive, setActiveSection }) => {
   const { portfolio } = portfolioData;
 
   return (
@@ -30,13 +30,20 @@ const Portfolio = ({ isActive }) => {
               </div>
               <div className="col-lg-11 mx-auto animate-child">
                 
-                <Swiper
-                  modules={[Navigation, Pagination]}
-                  navigation
-                  pagination={{ clickable: true }}
-                  loop={true}
-                  className="portfolio-slider overflow-visible"
-                >
+                <div className="portfolio-slider-container position-relative">
+                  <Swiper
+                    modules={[Navigation, Pagination]}
+                    navigation={{
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    }}
+                    pagination={{ 
+                      type: 'fraction',
+                      el: '.portfolio-pagination',
+                    }}
+                    loop={true}
+                    className="portfolio-slider overflow-visible"
+                  >
                   {portfolio.projects.map((project, idx) => (
                     <SwiperSlide key={idx} className="portfolio-item">
                       <div className="portfolio-box-wrapper">
@@ -65,6 +72,10 @@ const Portfolio = ({ isActive }) => {
                     </SwiperSlide>
                   ))}
                 </Swiper>
+                  <div className="portfolio-pagination swiper-pagination-fraction"></div>
+                  <div className="portfolio-button-prev swiper-button-prev"></div>
+                  <div className="portfolio-button-next swiper-button-next"></div>
+                </div>
               </div>
             </div>
             <div className="row mb-120 tab-mb-64">
@@ -137,6 +148,12 @@ const Portfolio = ({ isActive }) => {
             className="page-nav-link page-nav-parent d-flex align-items-end w-100 position-relative overflow-hidden bg-gradient-2 z-index-2"
             data-target="services-section"
             data-overlay="nav-overlay-services"
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveSection('services');
+              document.body.classList.add('page-active');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+            }}
           >
             <h2 className="d-flex transition position-relative">
               Services
@@ -151,6 +168,12 @@ const Portfolio = ({ isActive }) => {
             className="page-nav-link page-nav-parent d-flex align-items-end w-100 position-relative overflow-hidden bg-gradient-4 z-index-1"
             data-target="resume-section"
             data-overlay="nav-overlay-resume"
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveSection('resume');
+              document.body.classList.add('page-active');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+            }}
           >
             <h2 className="d-flex transition position-relative">
               Resume

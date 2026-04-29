@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 
 import portfolioData from '../../data/portfolio.json';
 
-const About = ({ isActive }) => {
+const About = ({ isActive, setActiveSection }) => {
   const { personalInfo, about } = portfolioData;
 
   return (
@@ -53,26 +53,40 @@ const About = ({ isActive }) => {
 
             <div className="row">
               <div className="col-lg-12 animate-child">
-                <Swiper
-                  modules={[Navigation, Pagination]}
-                  navigation
-                  pagination={{ clickable: true }}
-                  loop={true}
-                  className="testimonial-slider full-height"
-                >
-                  {about.testimonials.map((item, idx) => (
-                    <SwiperSlide key={idx}>
-                      <div className="testimonial-item">
-                        <div className="testimonial-box w-100 h-100 d-flex flex-column">
-                          <blockquote className="h3 fw-bold mb-5">{item.quote}</blockquote>
-                          <div className="quote-by mt-auto">
-                            <strong className="h5 fw-bold text-clip bg-gradient-1">{item.author}</strong><br />
+                <div className="testimonial-slider-container position-relative">
+                  <Swiper
+                    modules={[Navigation, Pagination]}
+                    navigation={{
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    }}
+                    pagination={{ 
+                      type: 'fraction',
+                      el: '.testimonial-pagination',
+                    }}
+                    loop={true}
+                    className="testimonial-slider full-height"
+                  >
+                    {about.testimonials.map((item, idx) => (
+                      <SwiperSlide key={idx}>
+                        <div className="testimonial-item">  
+                          <div className="testimonial-box w-100 h-100 d-flex flex-column">
+                            <blockquote className="h3 fw-bold mb-5">{item.quote}</blockquote>
+                            <div className="quote-by mt-auto">
+                              <strong className="h5 fw-bold text-clip bg-gradient-1">{item.author}</strong><br />
+                               <a href={item.link} className="link link-sm text-body-color" data-text={item.link}
+                                ><span>{item.link}</span><small className="ms-2"><i className="fa-solid fa-arrow-up-right-from-square"></i></small>
+                                </a>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                  <div className="testimonial-pagination swiper-pagination-fraction"></div>
+                  <div className="swiper-button-prev"></div>
+                  <div className="swiper-button-next"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -84,6 +98,12 @@ const About = ({ isActive }) => {
             className="page-nav-link page-nav-parent d-flex align-items-end w-100 position-relative overflow-hidden bg-gradient-6 z-index-2"
             data-target="contact-section"
             data-overlay="nav-overlay-contact"
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveSection('contact');
+              document.body.classList.add('page-active');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+            }}
           >
             <h2 className="d-flex transition position-relative">
               Contact
@@ -98,6 +118,13 @@ const About = ({ isActive }) => {
             className="page-nav-link page-nav-parent d-flex align-items-end w-100 position-relative overflow-hidden bg-gradient-2 z-index-1"
             data-target="services-section"
             data-overlay="nav-overlay-services"
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveSection('services');
+              document.body.classList.add('page-active');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+            }}
+
           >
             <h2 className="d-flex transition position-relative">
               Services

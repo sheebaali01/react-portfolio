@@ -1,7 +1,7 @@
 import React from 'react';
 import portfolioData from '../../data/portfolio.json';
 
-const Blog = ({ isActive }) => {
+const Blog = ({ isActive, setActiveSection }) => {
   const { blog } = portfolioData;
 
   return (
@@ -78,6 +78,12 @@ const Blog = ({ isActive }) => {
             className="page-nav-link page-nav-parent d-flex align-items-end w-100 position-relative overflow-hidden bg-gradient-4 z-index-2"
             data-target="resume-section"
             data-overlay="nav-overlay-resume"
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveSection('resume');
+              document.body.classList.add('page-active');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+            }}
           >
             <h2 className="d-flex transition position-relative">
               Resume
@@ -92,6 +98,12 @@ const Blog = ({ isActive }) => {
             className="page-nav-link page-nav-parent d-flex align-items-end w-100 position-relative overflow-hidden bg-gradient-6 z-index-1"
             data-target="contact-section"
             data-overlay="nav-overlay-contact"
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveSection('contact');
+              document.body.classList.add('page-active');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+            }}
           >
             <h2 className="d-flex transition position-relative">
               Contact

@@ -1,6 +1,6 @@
 {
   "navItems": [
-    { "id": "about", "title": "About", "heading": "I am John Boka, full-stack developer from california.", "icon": "about-icon.png", "bgClass": "bg-gradient-1", "zIndex": 10, "marquee": "Everything about me." },
+    { "id": "about", "title": "About", "heading": "I am Sohail Tufail, full-stack wordpress developer from pakistan.", "icon": "about-icon.png", "bgClass": "bg-gradient-1", "zIndex": 10, "marquee": "Everything about me." },
     { "id": "services", "title": "Services", "heading": "10+ years experiences with over 800 projects delivered.", "icon": "services-icon.png", "bgClass": "bg-gradient-2", "zIndex": 9, "marquee": "What I do." },
     { "id": "portfolio", "title": "Portfolio", "heading": "View my projects showcasing creativity and quality in web solutions.", "icon": "portfolio-icon.png", "bgClass": "bg-gradient-3", "zIndex": 8, "marquee": "My Featured Work." },
     { "id": "resume", "title": "Resume", "heading": "Explore my experience, education, and achievements in web development.", "icon": "resume-icon.png", "bgClass": "bg-gradient-4", "zIndex": 7, "marquee": "My Experiences." },
@@ -8,11 +8,10 @@
     { "id": "contact", "title": "Contact", "heading": "Let's connect and explore how we can work together to bring your vision to life.", "icon": "contact-icon.png", "bgClass": "bg-gradient-6", "zIndex": 5, "marquee": "Get in touch." }
   ],
   "personalInfo": {
-    "name": "John Boka",
-    "title": "Full-stack developer",
+    "name": "Sohail Tufail",
+    "title": "Full-stack wordpress developer",
     "bio": [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi est dignissimos officiis eveniet rem quas, explicabo recusandae quam illo, adipisci, quae iste magni aperiam fugiat provident animi sapiente nulla sint.",
-      "Explicabo recusandae quam illo, adipisci, quae iste magni aperiam fugiat provident animi sapiente nulla sint."
+      "I'm Sohail, a Full Stack WordPress Developer with hands-on expertise in Bricks Builder, Elementor Pro, Advanced Custom Fields (ACF), JetEngine, PHP, and Laravel. I've helped businesses across e-commerce, real estate, directories, portfolios, and service industries build websites that don't just look great — they work hard for their business."
     ],
     "social": [
       { "platform": "facebook", "url": "#", "icon": "fa-brands fa-facebook-f" },
@@ -23,34 +22,38 @@
       { "platform": "github", "url": "#", "icon": "fa-brands fa-github" }
     ],
     "scrambleText": [
-      "Full-stack developer",
-      "Css expert",
-      "Sometimes blogger",
-      "A proud dad"
+      "Full-stack wordpress developer",
+      "Bricks",
+      "Elementor",
+      "Laravel"
     ]
   },
   "about": {
-    "heading": "Hi, I am John Boka.",
+    "heading": "Hi, I am Sohail Tufail.",
     "testimonialsHeading": "What my clients say about me",
     "testimonials": [
       {
-        "quote": "I was very impressed with the quality of work produced. The job was completed to specification, and he went above and beyond in bringing the PSD's to life. I will be using this contractor again.",
-        "author": "David I."
+        "quote": "Sohail is a WordPress developer with whom I would like to collaborate again.",
+        "author": "Yakoub",
+        "link": "https://deepplants.com/"
       },
       {
-        "quote": "Was a great experience with John Boka coded it exactly how I wanted, I'm picky so that says a lot! Thanks!",
-        "author": "Zackary"
+        "quote": "Very happy with Sohail's work and would highly recommend",
+        "author": "Nicole",
+        "link": "https://deepplants.com/"
       },
       {
-        "quote": "Excellent piece of web build work. Went above and beyond what I asked and very supportive throughout. Very happy with the outcome and will definitely use Boka again.",
-        "author": "Stuart"
+        "quote": "This was my second project with Sohail, and once again he delivered excellent results. He redesigned our pages using Bricks Builder, ACF, and ACSS with great attention to layout accuracy, spacing, responsiveness, and performance. The pages were clean, fast, and built following WordPress best practices.",
+        "author": "Zubair",
+        "link": "https://deepplants.com/"
       }
+
     ]
   },
   "services": {
     "heading": "All solutions to help you grow your business.",
-    "subheading": "Quis voluptatibus inventore exercitationem harum minus officiis distinctio quia accusamus.",
-    "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse, recusandae nihil praesentium illo quisquam doloribus! Sapiente error itaque distinctio neque veritatis",
+    "subheading": "I specialize in building custom, high-performance WordPress websites tailored to your unique business needs.",
+    "description": "Struggling to find a WordPress Developer who actually delivers clean, fast & scalable websites? Your search ends here.",
     "items": [
       {
         "id": "service1",
@@ -106,28 +109,28 @@
     "heading": "Some of the greatest work of mine.",
     "projects": [
       {
-        "title": "Project Name 1",
-        "categories": ["Logo Design", "Branding", "UX/UI"],
-        "image": "/src/assets/images/portfolio1.webp",
-        "link": "#"
+        "title": "AI Research Site",
+        "categories": ["Elementor Pro","Advanced Custom Fields (ACF)","Yoast SEO"],
+        "image": "../src/assets/images/portfolio1.png",
+        "link": "https://deepplants.com/"
       },
       {
-        "title": "Project Name 2",
-        "categories": ["Logo Design", "Branding", "UX/UI"],
-        "image": "/src/assets/images/portfolio2.jpg",
-        "link": "#"
+        "title": "Luxury Bridal E-Commerce",
+        "categories": ["WordPress", "Bricks Builder", "WooCommerce","ACSS","PHP","Custom CSS","Figma","PageSpeed Tools"],
+        "image": "/src/assets/images/portfolio2.png",
+        "link": "https://marryandbride.com/"
       },
       {
-        "title": "Project Name 3",
-        "categories": ["Logo Design", "Branding", "UX/UI"],
-        "image": "/src/assets/images/portfolio3.jpg",
-        "link": "#"
+        "title": "B2B Enterprise Site | ACF | CMS",
+        "categories": ["WordPress", "Bricks Builder", "WooCommerce","ACSS","PHP","Custom CSS","Figma","PageSpeed Tools"],
+        "image": "/src/assets/images/portfolio3.png",
+        "link": "https://www.teads.com/"
       },
       {
-        "title": "Project Name 4",
-        "categories": ["Logo Design", "Branding", "UX/UI"],
-        "image": "/src/assets/images/portfolio4.jpg",
-        "link": "#"
+        "title": "AI-Powered K-12 EdTech Platform",
+        "categories": ["WordPress", "Bricks Builder", "WooCommerce","ACSS","PHP","Custom CSS","Figma","PageSpeed Tools"],
+        "image": "/src/assets/images/portfolio4.png",
+        "link": "https://temp.nafaais.com/"
       }
     ],
     "stats": [
