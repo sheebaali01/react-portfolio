@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,12 +12,22 @@ import Portfolio from './components/sections/Portfolio';
 import Resume from './components/sections/Resume';
 import Blog from './components/sections/Blog';
 import Contact from './components/sections/Contact';
+import Admin from './components/Admin';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const [activeSection, setActiveSection] = useState(null);
   const [navOpen, setNavOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/admin') {
+        document.body.classList.add('admin-mode');
+      } else {
+        document.body.classList.remove('admin-mode');
+      }
+  }, [location.pathname]);
 
   useEffect(() => {
     document.body.classList.add('js-ready');
@@ -107,26 +118,31 @@ function App() {
   }, [activeSection]);
 
   return (
-    <>
-      <Header />
-      <Navbar activeSection={activeSection} setActiveSection={setActiveSection} navOpen={navOpen} setNavOpen={setNavOpen} />
-      <main id="main" className="position-relative">
-        <About isActive={activeSection === 'about'} setActiveSection={setActiveSection} />
-        <Services isActive={activeSection === 'services'} setActiveSection={setActiveSection} />
-        <Portfolio isActive={activeSection === 'portfolio'} setActiveSection={setActiveSection} />
-        <Resume isActive={activeSection === 'resume'} setActiveSection={setActiveSection} />
-        <Blog isActive={activeSection === 'blog'} setActiveSection={setActiveSection} />
-        <Contact isActive={activeSection === 'contact'} setActiveSection={setActiveSection} />
-        
-        {/* Page Transition Overlays */}
-        <div id="nav-overlay-about" className="nav-overlay bg-gradient-1"></div>
-        <div id="nav-overlay-services" className="nav-overlay bg-gradient-2"></div>
-        <div id="nav-overlay-portfolio" className="nav-overlay bg-gradient-3"></div>
-        <div id="nav-overlay-resume" className="nav-overlay bg-gradient-4"></div>
-        <div id="nav-overlay-blog" className="nav-overlay bg-gradient-5"></div>
-        <div id="nav-overlay-contact" className="nav-overlay bg-gradient-6"></div>
-      </main>
-    </>
+    <Routes>
+      <Route path="/admin" element={<Admin />} />
+      <Route path="/" element={
+        <>
+          <Header />
+          <Navbar activeSection={activeSection} setActiveSection={setActiveSection} navOpen={navOpen} setNavOpen={setNavOpen} />
+          <main id="main" className="position-relative">
+            <About isActive={activeSection === 'about'} setActiveSection={setActiveSection} />
+            <Services isActive={activeSection === 'services'} setActiveSection={setActiveSection} />
+            <Portfolio isActive={activeSection === 'portfolio'} setActiveSection={setActiveSection} />
+            <Resume isActive={activeSection === 'resume'} setActiveSection={setActiveSection} />
+            <Blog isActive={activeSection === 'blog'} setActiveSection={setActiveSection} />
+            <Contact isActive={activeSection === 'contact'} setActiveSection={setActiveSection} />
+            
+            {/* Page Transition Overlays */}
+            <div id="nav-overlay-about" className="nav-overlay bg-gradient-1"></div>
+            <div id="nav-overlay-services" className="nav-overlay bg-gradient-2"></div>
+            <div id="nav-overlay-portfolio" className="nav-overlay bg-gradient-3"></div>
+            <div id="nav-overlay-resume" className="nav-overlay bg-gradient-4"></div>
+            <div id="nav-overlay-blog" className="nav-overlay bg-gradient-5"></div>
+            <div id="nav-overlay-contact" className="nav-overlay bg-gradient-6"></div>
+          </main>
+        </>
+      } />
+    </Routes>
   );
 }
 

@@ -5,9 +5,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import portfolioData from '../../data/portfolio.json';
+import { usePortfolio } from '../../context/PortfolioContext';
+import Footer from '../Footer';
 
 const About = ({ isActive, setActiveSection }) => {
+  const { data: portfolioData } = usePortfolio();
   const { personalInfo, about } = portfolioData;
 
   return (
@@ -135,6 +137,7 @@ const About = ({ isActive, setActiveSection }) => {
             </div>
           </a>
         </div>
+        <Footer />
       </div>
   );
 };

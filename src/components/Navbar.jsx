@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import portfolioData from '../data/portfolio.json';
+import { usePortfolio } from '../context/PortfolioContext';
 
 const Navbar = ({ activeSection, setActiveSection, navOpen, setNavOpen }) => {
+  const { data: portfolioData } = usePortfolio();
   const { navItems } = portfolioData;
 
   const handleNavClick = (id) => {
@@ -13,6 +14,21 @@ const Navbar = ({ activeSection, setActiveSection, navOpen, setNavOpen }) => {
       window.scrollTo({ top: 0, behavior: 'instant' });
     }
   };
+
+  useGSAP(() => {
+    if (activeSection) {
+      const activeBlock = document.getElementById(`nav-${activeSection}`);
+      if (activeBlock) {
+        const heroHeading = activeBlock.querySelector('.hero-heading');
+        if (heroHeading) {
+          gsap.fromTo(heroHeading, 
+            { y: 20, autoAlpha: 0 }, 
+            { delay: 0.5, duration: 0.7, y: 0, autoAlpha: 1, ease: 'power2.out' }
+          );
+        }
+      }
+    }
+  }, [activeSection]);
 
   const handleBackToMenu = (e) => {
     e.preventDefault();

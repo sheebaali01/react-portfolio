@@ -4,7 +4,6 @@
     { "id": "services", "title": "Services", "heading": "7+ years experiences with over 250+ projects delivered.", "icon": "services-icon.png", "bgClass": "bg-gradient-2", "zIndex": 9, "marquee": "What I do." },
     { "id": "portfolio", "title": "Portfolio", "heading": "View my projects showcasing creativity and quality in web solutions.", "icon": "portfolio-icon.png", "bgClass": "bg-gradient-3", "zIndex": 8, "marquee": "My Featured Work." },
     { "id": "resume", "title": "Resume", "heading": "Explore my experience, education, and achievements in web development.", "icon": "resume-icon.png", "bgClass": "bg-gradient-4", "zIndex": 7, "marquee": "My Experiences." },
-    { "id": "blog", "title": "Blog", "heading": "Read insights and updates on web development and trends.", "icon": "blog-icon.png", "bgClass": "bg-gradient-5", "zIndex": 6, "marquee": "My articles." },
     { "id": "contact", "title": "Contact", "heading": "Let's connect and explore how we can work together to bring your vision to life.", "icon": "contact-icon.png", "bgClass": "bg-gradient-6", "zIndex": 5, "marquee": "Get in touch." }
   ],
   "personalInfo": {
@@ -119,6 +118,12 @@
         "categories": ["WordPress", "Bricks Builder", "WooCommerce","ACSS","PHP","Custom CSS","Figma","PageSpeed Tools"],
         "image": "/src/assets/images/portfolio4.png",
         "link": "https://temp.nafaais.com/"
+      },
+      {
+        "title": "The Laundry Club",
+        "categories": ["WordPress", "PSD to WordPress","Elementor Pro"],
+        "image": "/src/assets/images/portfolio5.png",
+        "link": "https://austinsammon-yencv.wpcomstaging.com/"
       }
     ],
     "stats": [
@@ -130,7 +135,7 @@
     "clients": [
       "/src/assets/images/client-logo1.png",
       "/src/assets/images/client-logo2.png",
-      "/src/assets/images/client-logo3.png",
+      "/src/assets/images/client-logo3.svg",
       "/src/assets/images/client-logo4.png"
     ]
   },
@@ -138,82 +143,76 @@
     "heading": "Building quality web solutions with proven expertise.",
     "experiences": [
       {
-        "period": "2020 - Today",
-        "title": "Full Stack Developer",
-        "company": "Agency of Development",
-        "location": "INDIA",
-        "link": "#",
-        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+        "period": "2024 - Present",
+        "title": "Full Stack Wordpress Developer",
+        "company": "Upwork",
+        "location": "Pakistan",
+        "link": "https://www.upwork.com/freelancers/wordpressdevelopersohail",
+        "description": "As a professional freelance WordPress Developer with over 7 years of experience, I specialize in building custom WordPress websites that are fast, secure, mobile-responsive, and SEO-optimized. From personal blogs to full-scale WooCommerce stores, I help businesses bring their ideas to life with clean code and scalable WordPress design."
       },
       {
-        "period": "2016 - 2020",
-        "title": "Senior Frontend Developer",
-        "company": "Agency of Development",
-        "location": "USA",
+        "period": "2021 - 2025",
+        "title": "WordPress Developer, Bricks Builder, Elementor",
+        "company": "ITSTAKES",
+        "location": "Pakistan",
         "link": "#",
-        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+        "description": "As a WordPress Developer at ITSTAKES, I built and delivered 100+ WordPress websites for business clients using Elementor Pro and Bricks Builder. My role involved project planning, technical oversight, and ensuring timely delivery of WordPress solutions tailored to each client's needs."
       },
       {
-        "period": "2014 - 2016",
-        "title": "Frontend Developer",
-        "company": "Agency of Development",
-        "location": "UK",
+        "period": "2017 - 2021",
+        "title": "WordPress Developer",
+        "company": "Moboride Software House",
+        "location": "Pakistan",
         "link": "#",
-        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+        "description": "At Moboride Software House, I served as a WordPress Developer building high-performance, custom WordPress websites and full-stack solutions for businesses looking to scale their online presence. I specialized in translating complex business requirements into user-friendly, responsive, and secure WordPress platforms."
       }
     ],
-    "education": [
+    "education": [     
       {
-        "period": "2012 - 2014",
-        "title": "Frontend Development",
-        "institution": "University of Development",
+        "period": "2022 - 2024",
+        "title": "Master of Computer Applications (MCA)",
+        "institution": "COMSATS Institute of Information Technology",
         "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
       },
-      {
-        "period": "2010 - 2012",
-        "title": "Frontend Development",
-        "institution": "University of Development",
-        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
-      },
-      {
-        "period": "2006 - 2010",
-        "title": "Frontend Development",
-        "institution": "University of Development",
+       {
+        "period": "2017 - 2021",
+        "title": "BS in Computer Science",
+        "institution": "COMSATS Institute of Information Technology",
         "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
       }
     ],
     "awards": [
       {
-        "title": "Best Frontend Developer",
-        "status": "Winner",
-        "year": "2024",
+        "title": "Professional WordPress Developer – Advanced Web Solutions",
+        "status": "ITSTAKES",
+        "year": "2025",
         "logo": "/src/assets/images/awwwards-logo.png",
-        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+        "description": "This certification demonstrates advanced proficiency as a WordPress Developer, with expertise in: Custom WordPress themes and plugin development Elementor Pro and Bricks Builder advanced layouts ACSS-powered modular CSS systems for reusable, scalable designs Dynamic content creation using ACF and JetEngine WooCommerce setup and optimization for online stores Performance, SEO, and mobile responsiveness optimization Holders of this certification are skilled in delivering secure, high-performing, and maintainable WordPress websites for clients worldwide, capable of implementing scalable, component-based architectures and modern web development best practices."
       },
       {
-        "title": "Site of the month",
-        "status": "Nominee",
-        "year": "2023",
+        "title": "Elementor Expert Certification",
+        "status": "Elementor",
+        "year": "2025",
         "logo": "/src/assets/images/webbyawards-logo.png",
-        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+        "description": "Completed the official Elementor Expert Certification, demonstrating advanced proficiency in WordPress website design and development using Elementor and Elementor Pro. This certification covers: — Advanced Elementor page building techniques — Responsive design and mobile-first development — Custom layouts, widgets, and design systems — Performance optimization within Elementor — WooCommerce integration using Elementor Pro — Dynamic content and template management As a certified Elementor Expert with 7 years of WordPress development experience, I have applied these skills across 76+ client projects — building high-converting landing pages, full business websites, and eCommerce stores using Elementor and Elementor Pro."
       },
       {
-        "title": "Site of the day",
-        "status": "Nominee",
-        "year": "2022",
+        "title": "Bricks Builder Developer Certification",
+        "status": "Bricks Builder Academy",
+        "year": "2023",
         "logo": "/src/assets/images/fwa-logo.png",
-        "description": "Nihil placeat optio nostrum quam aperiam delectus natus a illum voluptates fuga consequuntur harum."
+        "description": "Completed the official Bricks Builder Developer Certification through Bricks Builder Academy, demonstrating expert-level proficiency in WordPress website development using Bricks Builder. This certification covers: — Advanced Bricks Builder layout and design techniques — Dynamic data and custom content using ACF and JetEngine — ACSS (Automatic CSS) integration for scalable styling systems — Responsive and mobile-first WordPress development — Performance-focused WordPress builds using Bricks Builder — Custom query loops, dynamic templates, and reusable components As a certified Bricks Builder Developer with 7 years of WordPress experience, I specialize in building fast, scalable, and fully custom WordPress websites using Bricks Builder — for agencies, small businesses, coaches, and enterprise clients worldwide."
       }
     ],
     "skills": [
+      { "name": "WordPress", "percentage": "95", "icon": "/src/assets/images/wordpress-logo.svg" },
+      { "name": "Elementor", "percentage": "95", "icon": "/src/assets/images/elementor-logo.png" },
+      { "name": "CMS Development", "percentage": "90", "icon": "/src/assets/images/cms-logo.png" },
+      { "name": "PSD to WordPress", "percentage": "85", "icon": "/src/assets/images/figma-logo.svg" },
+      { "name": "PHP", "percentage": "85", "icon": "/src/assets/images/php-logo.png" },
       { "name": "Html", "percentage": "100", "icon": "/src/assets/images/html5-logo.svg" },
       { "name": "CSS", "percentage": "95", "icon": "/src/assets/images/css3-logo.svg" },
-      { "name": "Javascript", "percentage": "80", "icon": "/src/assets/images/javascript-logo.svg" },
-      { "name": "Typescript", "percentage": "70", "icon": "/src/assets/images/typescript-logo.svg" },
-      { "name": "React js", "percentage": "85", "icon": "/src/assets/images/react-logo.svg" },
-      { "name": "Next js", "percentage": "75", "icon": "/src/assets/images/next-js-logo.svg" },
-      { "name": "Figma", "percentage": "80", "icon": "/src/assets/images/figma-logo.svg" },
-      { "name": "WordPress", "percentage": "90", "icon": "/src/assets/images/wordpress-logo.svg" }
+      { "name": "Javascript", "percentage": "80", "icon": "/src/assets/images/javascript-logo.svg" }
     ]
   },
   "blog": {
@@ -248,9 +247,9 @@
   "contact": {
     "heading": "Say hello and let's disucss your next project.",
     "subheading": "Want to know more about me, tell me about your project or just to say hello? Drop me a line and I'll get back as soon as possible.",
-    "phone": "+0 987 654 3210",
+    "phone": "+923368247274",
     "email": "boka@gmail.com",
-    "address": "3rd floor, Building Name, City Name, Country Name",
+    "address": "Dera Ghazi Khan, Pakistan",
     "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6539248.98817079!2d-129.36198337818405!3d36.84265159999556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1726227327963!5m2!1sen!2sin"
   }
 }

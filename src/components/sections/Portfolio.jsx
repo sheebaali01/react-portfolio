@@ -5,9 +5,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import portfolioData from '../../data/portfolio.json';
+import { usePortfolio } from '../../context/PortfolioContext';
+import Footer from '../Footer';
 
 const Portfolio = ({ isActive, setActiveSection }) => {
+  const { data: portfolioData } = usePortfolio();
   const { portfolio } = portfolioData;
 
   return (
@@ -115,8 +117,7 @@ const Portfolio = ({ isActive, setActiveSection }) => {
                   </div>
                   <div className="col-lg-6 ms-auto opacity-75">
                     <div className="animate-child">
-                      <p>Quis voluptatibus inventore exercitationem harum minus obcaecati officiis distinctio quia accusamus sit quae.</p>
-                      <p>Harum placeat iusto, eius esse eaque natus rerum praesentium debitis..</p>
+                      <p>I am privileged to have worked with some of the best brands and agencies globally.</p>
                     </div>
                   </div>
                 </div>
@@ -182,6 +183,7 @@ const Portfolio = ({ isActive, setActiveSection }) => {
             </div>
           </a>
         </div>
+        <Footer />
       </div>
   );
 };

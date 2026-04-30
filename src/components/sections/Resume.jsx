@@ -1,7 +1,9 @@
 import React from 'react';
-import portfolioData from '../../data/portfolio.json';
+import { usePortfolio } from '../../context/PortfolioContext';
+import Footer from '../Footer';
 
 const Resume = ({ isActive, setActiveSection }) => {
+  const { data: portfolioData } = usePortfolio();
   const { resume } = portfolioData;
 
   return (
@@ -16,8 +18,7 @@ const Resume = ({ isActive, setActiveSection }) => {
                   </div>
                   <div className="col-lg-6 ms-auto opacity-75">
                     <div className="animate-child">
-                      <p>Quis voluptatibus inventore exercitationem harum minus obcaecati officiis distinctio quia accusamus sit quae.</p>
-                      <p>Harum placeat iusto, eius esse eaque natus rerum praesentium debitis..</p>
+                      <p>I build clean, fast, and scalable WordPress websites with a focus on performance and user experience.</p>
                     </div>
                   </div>
                 </div>
@@ -67,9 +68,6 @@ const Resume = ({ isActive, setActiveSection }) => {
                             <h5 className="font-primary fw-bold opacity-75 mb-0">{edu.title}</h5>
                             <p className="opacity-50">from {edu.institution}</p>
                           </div>
-                          <div className="education-box-right col-lg-4">
-                            <p>{edu.description}</p>
-                          </div>
                         </div>
                         {idx !== resume.education.length - 1 && <hr className="my-5" />}
                       </div>
@@ -82,16 +80,11 @@ const Resume = ({ isActive, setActiveSection }) => {
             <div className="row">
               <div className="col-lg-12">
                 <div className="awards-list-wrapper animate-child mt-120 tab-mt-64">
-                  <h2 className="page-heading mb-48 mob-mb-24 text-clip bg-gradient-4">Awards</h2>
+                  <h2 className="page-heading mb-48 mob-mb-24 text-clip bg-gradient-4">Certificates</h2>
                   <div className="awards-list">
                     {resume.awards.map((award, idx) => (
                       <div className="awards-item" key={idx}>
                         <div className="awards-box row gap-3 gap-lg-0 align-items-center animate-child">
-                          <div className="awards-box-left col-lg-3">
-                            <div className="awards-logo d-flex align-items-center justify-content-center shadow rounded-4 me-3 p-4 bg-gradient-4">
-                              <img src={award.logo} alt={award.title} />
-                            </div>
-                          </div>
                           <div className="awards-mid col-lg-5">
                             <h6 className="font-primary fw-bold mb-0">
                               <span className="text-clip bg-gradient-2">{award.status}</span>
@@ -176,6 +169,7 @@ const Resume = ({ isActive, setActiveSection }) => {
             </div>
           </a>
         </div>
+        <Footer />
       </div>
   );
 };

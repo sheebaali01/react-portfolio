@@ -2,11 +2,12 @@ import React, { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { TextPlugin } from 'gsap/TextPlugin';
-import portfolioData from '../data/portfolio.json';
+import { usePortfolio } from '../context/PortfolioContext';
 
 gsap.registerPlugin(TextPlugin);
 
 const Header = () => {
+  const { data: portfolioData } = usePortfolio();
   const { personalInfo } = portfolioData;
   const textRef = useRef(null);
 

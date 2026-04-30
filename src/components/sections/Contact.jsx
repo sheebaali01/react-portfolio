@@ -1,7 +1,9 @@
 import React from 'react';
-import portfolioData from '../../data/portfolio.json';
+import { usePortfolio } from '../../context/PortfolioContext';
+import Footer from '../Footer';
 
 const Contact = ({ isActive, setActiveSection }) => {
+  const { data: portfolioData } = usePortfolio();
   const { contact } = portfolioData;
 
   return (
@@ -175,6 +177,7 @@ const Contact = ({ isActive, setActiveSection }) => {
             </div>
           </a>
         </div>
+        <Footer />
       </div>
   );
 };
