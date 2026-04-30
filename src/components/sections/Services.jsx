@@ -14,12 +14,16 @@ const Services = ({ isActive, setActiveSection }) => {
                   <div className="col-lg-11 animate-child">
                     <h2 className="page-heading mb-48 mob-mb-24 text-clip bg-gradient-2">{services.heading}</h2>
                   </div>
-                  <div className="col-lg-6 ms-auto opacity-75">
+                  {/* <div className="col-lg-6 ms-auto opacity-75">
                     <div className="animate-child">
-                      <p>Quis voluptatibus inventore exercitationem harum minus obcaecati officiis distinctio quia accusamus sit quae.</p>
-                      <p>Harum placeat iusto, eius esse eaque natus rerum praesentium debitis..</p>
+                      <p>— Custom WordPress Website Design & Development from scratch</p>
+                      <p>— Bricks Builder Development (pixel-perfect, lightweight, no bloat)</p>
+                      <p>— Elementor Pro Page Building & Custom Template Design</p>
+                      <p>— Advanced Custom Fields (ACF) — Custom post types, fields & layouts</p>
+                      <p>— JetEngine Development — Dynamic listings, CPT, Meta Boxes,</p>
+                      <p> Query Builder, Calendar, Booking & Relations</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-lg-12">

@@ -44,7 +44,7 @@ const Header = () => {
         <h2 className="mb-12 font-primary fw-bold" id="text_change" ref={textRef}>
           {personalInfo.title}
         </h2>
-        <ul className="d-flex flex-wrap gap-4">
+        <ul className="d-flex flex-wrap gap-3 social-list">
           {personalInfo.social.map((item, idx) => (
             <li key={idx}>
               <a href={item.url} target="_blank" rel="noreferrer">

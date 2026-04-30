@@ -1,7 +1,7 @@
 {
   "navItems": [
     { "id": "about", "title": "About", "heading": "I am Sohail Tufail, full-stack wordpress developer from pakistan.", "icon": "about-icon.png", "bgClass": "bg-gradient-1", "zIndex": 10, "marquee": "Everything about me." },
-    { "id": "services", "title": "Services", "heading": "10+ years experiences with over 800 projects delivered.", "icon": "services-icon.png", "bgClass": "bg-gradient-2", "zIndex": 9, "marquee": "What I do." },
+    { "id": "services", "title": "Services", "heading": "7+ years experiences with over 250+ projects delivered.", "icon": "services-icon.png", "bgClass": "bg-gradient-2", "zIndex": 9, "marquee": "What I do." },
     { "id": "portfolio", "title": "Portfolio", "heading": "View my projects showcasing creativity and quality in web solutions.", "icon": "portfolio-icon.png", "bgClass": "bg-gradient-3", "zIndex": 8, "marquee": "My Featured Work." },
     { "id": "resume", "title": "Resume", "heading": "Explore my experience, education, and achievements in web development.", "icon": "resume-icon.png", "bgClass": "bg-gradient-4", "zIndex": 7, "marquee": "My Experiences." },
     { "id": "blog", "title": "Blog", "heading": "Read insights and updates on web development and trends.", "icon": "blog-icon.png", "bgClass": "bg-gradient-5", "zIndex": 6, "marquee": "My articles." },
@@ -14,18 +14,14 @@
       "I'm Sohail, a Full Stack WordPress Developer with hands-on expertise in Bricks Builder, Elementor Pro, Advanced Custom Fields (ACF), JetEngine, PHP, and Laravel. I've helped businesses across e-commerce, real estate, directories, portfolios, and service industries build websites that don't just look great — they work hard for their business."
     ],
     "social": [
-      { "platform": "facebook", "url": "#", "icon": "fa-brands fa-facebook-f" },
-      { "platform": "twitter", "url": "#", "icon": "fa-brands fa-x-twitter" },
-      { "platform": "youtube", "url": "#", "icon": "fa-brands fa-youtube" },
-      { "platform": "linkedin", "url": "#", "icon": "fa-brands fa-linkedin-in" },
-      { "platform": "instagram", "url": "#", "icon": "fa-brands fa-instagram" },
-      { "platform": "github", "url": "#", "icon": "fa-brands fa-github" }
+      { "platform": "whatsapp", "url": "#", "icon": "fa-brands fa-whatsapp" },
+      { "platform": "upwork", "url": "#", "icon": "fa-brands fa-upwork" }
     ],
     "scrambleText": [
       "Full-stack wordpress developer",
-      "Bricks",
-      "Elementor",
-      "Laravel"
+      "Bricks Builder",
+      "Elementor Pro",
+      "PHP | Laravel Developer"
     ]
   },
   "about": {
@@ -35,12 +31,12 @@
       {
         "quote": "Sohail is a WordPress developer with whom I would like to collaborate again.",
         "author": "Yakoub",
-        "link": "https://deepplants.com/"
+        "link": "https://temp.nafaais.com/"
       },
       {
         "quote": "Very happy with Sohail's work and would highly recommend",
         "author": "Nicole",
-        "link": "https://deepplants.com/"
+        "link": "https://austinsammon-yencv.wpcomstaging.com/"
       },
       {
         "quote": "This was my second project with Sohail, and once again he delivered excellent results. He redesigned our pages using Bricks Builder, ACF, and ACSS with great attention to layout accuracy, spacing, responsiveness, and performance. The pages were clean, fast, and built following WordPress best practices.",
@@ -57,51 +53,43 @@
     "items": [
       {
         "id": "service1",
-        "title": "Branding",
-        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
-        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
+        "title": "WordPress",
+        "description": "Custom WordPress websites built with a focus on performance, scalability, and clean architecture. From simple sites to complex dynamic builds.",
+        "features": ["Elementor", "Bricks Builder", "Oxygen", "ACF", "ACSS", "Custom Themes"],
         "image": "/src/assets/images/service1.jpg",
         "mobImage": "/src/assets/images/service1-mob.jpg"
       },
       {
         "id": "service2",
-        "title": "Html conversion",
-        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
-        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
+        "title": "Shopify",
+        "description": "Conversion-focused Shopify stores designed for speed, usability, and sales growth with seamless user experience.",
+        "features": ["Custom Sections", "Speed Optimization", "Responsive Design", "App Integration"],
         "image": "/src/assets/images/service2.jpg",
         "mobImage": "/src/assets/images/service2-mob.jpg"
       },
       {
         "id": "service3",
-        "title": "React Js",
-        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
-        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
+        "title": "Webflow ",
+        "description": "Pixel-perfect Webflow websites with smooth animations and clean structure, ideal for modern brands and startups.",
+        "features": ["Pixel Perfect UI", "CMS Setup", "Animations", "Fully Responsive"],
         "image": "/src/assets/images/service3.jpg",
         "mobImage": "/src/assets/images/service3-mob.jpg"
       },
       {
         "id": "service4",
-        "title": "Mobile app",
-        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
-        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
+        "title": "Custom Websites",
+        "description": "Full-stack web applications built using, Laravel, React and modern tools for scalability and performance.",
+        "features": ["React.js", "Laravel", "Node.js", "REST APIs", "MongoDB/MySQL", "Custom CSS/JS"],
         "image": "/src/assets/images/service4.jpg",
         "mobImage": "/src/assets/images/service4-mob.jpg"
       },
       {
         "id": "service5",
-        "title": "eCommerce",
-        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
-        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
-        "image": "/src/assets/images/service5.jpg",
+        "title": "eCommerce Solutions",
+        "description": "Robust eCommerce platforms with secure payments, optimized performance, and seamless user journeys.",
+        "features": ["WooCommerce", "Shopify", "Custom Checkout", "Payment Integration", "Performance Optimization"],
+        "image": "/src/assets/images/service5.png",
         "mobImage": "/src/assets/images/service5-mob.jpg"
-      },
-      {
-        "id": "service6",
-        "title": "Copywriting",
-        "description": "Adipisci corrupti unde asperiores voluptates provident accusamus earum tempora esse.",
-        "features": ["Pixel perfect", "Speed optimization", "Fully Responsive"],
-        "image": "/src/assets/images/service6.jpg",
-        "mobImage": "/src/assets/images/service6-mob.jpg"
       }
     ]
   },
@@ -134,10 +122,10 @@
       }
     ],
     "stats": [
-      { "label": "Projects completed", "value": "800", "suffix": "+" },
-      { "label": "Happy clients", "value": "50", "suffix": "" },
-      { "label": "Countries served", "value": "20", "suffix": "" },
-      { "label": "Awards won", "value": "3", "suffix": "" }
+      { "label": "Projects completed", "value": "250", "suffix": "+" },
+      { "label": "Happy clients", "value": "247+", "suffix": "" },
+      { "label": "Countries served", "value": "50", "suffix": "" },
+      { "label": "Years of experience", "value": "7", "suffix": "+" }
     ],
     "clients": [
       "/src/assets/images/client-logo1.png",

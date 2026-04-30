@@ -12526,7 +12526,7 @@ textarea[class~=form-control]:focus {
 
 /* Fraction counter: bottom-left */
 .swiper-pagination-fraction {
-    position: absolute !important;
+    /* position: relative !important; */
     bottom: 12px !important;
     left: 0 !important;
     right: auto !important;
@@ -12589,4 +12589,7 @@ textarea[class~=form-control]:focus {
 .swiper-button-prev:hover:after,
 .swiper-button-next:hover:after {
     color: var(--boka-body-bg) !important;
+}
+.social-list .fa-brands{
+    font-size: 25px;
 }

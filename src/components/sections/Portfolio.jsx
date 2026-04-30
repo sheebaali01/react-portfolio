@@ -22,8 +22,7 @@ const Portfolio = ({ isActive, setActiveSection }) => {
                   </div>
                   <div className="col-lg-6 ms-auto opacity-75">
                     <div className="animate-child">
-                      <p>Quis voluptatibus inventore exercitationem harum minus obcaecati officiis distinctio quia accusamus sit quae.</p>
-                      <p>Harum placeat iusto, eius esse eaque natus rerum praesentium debitis..</p>
+                      <p>I work with business owners who want professional, conversion-focused websites, as well as startups that need a fast and scalable web presence to support their growth.</p>
                     </div>
                   </div>
                 </div>
@@ -86,8 +85,7 @@ const Portfolio = ({ isActive, setActiveSection }) => {
                   </div>
                   <div className="col-lg-6 ms-auto opacity-75">
                     <div className="animate-child">
-                      <p>Quis voluptatibus inventore exercitationem harum minus obcaecati officiis distinctio quia accusamus sit quae.</p>
-                      <p>Harum placeat iusto, eius esse eaque natus rerum praesentium debitis..</p>
+                      <p>Every project I work on is built with performance, scalability, and reliability in mind. These stats represent real results, satisfied clients, and consistent delivery.</p>
                     </div>
                   </div>
                 </div>

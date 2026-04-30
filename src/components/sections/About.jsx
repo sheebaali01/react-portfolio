@@ -26,7 +26,7 @@ const About = ({ isActive, setActiveSection }) => {
               <div className="col-lg-6 animate-child">
                 <div className="about-img-container position-relative w-100 h-100 rounded-5 overflow-hidden shadow">
                   <div className="about-img-hold position-relative w-100 h-100 z-index-1">
-                    <img src="/src/assets/images/about-img.jpg" alt="" className="w-100 h-100 img-cover" />
+                    <img src="/src/assets/images/about-img.webp" alt="" className="w-100 h-100 img-cover" />
                   </div>
                   <div className="signature-hold position-absolute z-index-2">
                     <img src="/src/assets/images/signature.png" alt="" />
@@ -43,8 +43,8 @@ const About = ({ isActive, setActiveSection }) => {
                   </div>
                   <div className="col-lg-6 ms-auto opacity-75">
                     <div className="animate-child">
-                      <p>Quis voluptatibus inventore exercitationem harum minus obcaecati officiis distinctio quia accusamus sit quae.</p>
-                      <p>Harum placeat iusto, eius esse eaque natus rerum praesentium debitis..</p>
+                      <p>I take pride in delivering reliable, high-quality solutions that clients can trust. Here’s what people say about working with me..</p>
+                      {/* <p>Harum placeat iusto, eius esse eaque natus rerum praesentium debitis..</p> */}
                     </div>
                   </div>
                 </div>
