@@ -145,7 +145,7 @@ const Resume = ({ isActive, setActiveSection }) => {
               <span className="arrow outline"><i className="fa-solid fa-arrow-right"></i></span>
             </h2>
             <div className="page-nav-icon">
-              <img src="/src/assets/images/portfolio-icon.png" alt="" />
+              <img src="/assets/images/portfolio-icon.png" alt="" />
             </div>
           </a>
           <a
@@ -165,7 +165,7 @@ const Resume = ({ isActive, setActiveSection }) => {
               <span className="arrow outline"><i className="fa-solid fa-arrow-right"></i></span>
             </h2>
             <div className="page-nav-icon">
-              <img src="/src/assets/images/blog-icon.png" alt="" />
+              <img src="/assets/images/blog-icon.png" alt="" />
             </div>
           </a>
         </div>

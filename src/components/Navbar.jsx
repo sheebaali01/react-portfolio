@@ -71,7 +71,7 @@ const Navbar = ({ activeSection, setActiveSection, navOpen, setNavOpen }) => {
                 <h3 className="hero-heading">{item.heading}</h3>
 
                 <div className="navbar-icon">
-                  <img src={`/src/assets/images/${item.icon}`} alt="" />
+                  <img src={`/assets/images/${item.icon}`} alt="" />
                 </div>
                 <div className="text-marquee-wrapper d-none d-xl-block">
                   <div className="text-marquee-parent">

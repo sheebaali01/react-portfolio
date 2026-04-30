@@ -55,40 +55,40 @@
         "title": "WordPress",
         "description": "Custom WordPress websites built with a focus on performance, scalability, and clean architecture. From simple sites to complex dynamic builds.",
         "features": ["Elementor", "Bricks Builder", "Oxygen", "ACF", "ACSS", "Custom Themes"],
-        "image": "/src/assets/images/service1.jpg",
-        "mobImage": "/src/assets/images/service1-mob.jpg"
+        "image": "/assets/images/service1.jpg",
+        "mobImage": "/assets/images/service1-mob.jpg"
       },
       {
         "id": "service2",
         "title": "Shopify",
         "description": "Conversion-focused Shopify stores designed for speed, usability, and sales growth with seamless user experience.",
         "features": ["Custom Sections", "Speed Optimization", "Responsive Design", "App Integration"],
-        "image": "/src/assets/images/service2.jpg",
-        "mobImage": "/src/assets/images/service2-mob.jpg"
+        "image": "/assets/images/service2.jpg",
+        "mobImage": "/assets/images/service2-mob.jpg"
       },
       {
         "id": "service3",
         "title": "Webflow ",
         "description": "Pixel-perfect Webflow websites with smooth animations and clean structure, ideal for modern brands and startups.",
         "features": ["Pixel Perfect UI", "CMS Setup", "Animations", "Fully Responsive"],
-        "image": "/src/assets/images/service3.jpg",
-        "mobImage": "/src/assets/images/service3-mob.jpg"
+        "image": "/assets/images/service3.jpg",
+        "mobImage": "/assets/images/service3-mob.jpg"
       },
       {
         "id": "service4",
         "title": "Custom Websites",
         "description": "Full-stack web applications built using, Laravel, React and modern tools for scalability and performance.",
         "features": ["React.js", "Laravel", "Node.js", "REST APIs", "MongoDB/MySQL", "Custom CSS/JS"],
-        "image": "/src/assets/images/service4.jpg",
-        "mobImage": "/src/assets/images/service4-mob.jpg"
+        "image": "/assets/images/service4.jpg",
+        "mobImage": "/assets/images/service4-mob.jpg"
       },
       {
         "id": "service5",
         "title": "eCommerce Solutions",
         "description": "Robust eCommerce platforms with secure payments, optimized performance, and seamless user journeys.",
         "features": ["WooCommerce", "Shopify", "Custom Checkout", "Payment Integration", "Performance Optimization"],
-        "image": "/src/assets/images/service5.png",
-        "mobImage": "/src/assets/images/service5-mob.jpg"
+        "image": "/assets/images/service5.png",
+        "mobImage": "/assets/images/service5-mob.jpg"
       }
     ]
   },
@@ -98,31 +98,31 @@
       {
         "title": "AI Research Site",
         "categories": ["Elementor Pro","Advanced Custom Fields (ACF)","Yoast SEO"],
-        "image": "../src/assets/images/portfolio1.png",
+        "image": "../assets/images/portfolio1.png",
         "link": "https://deepplants.com/"
       },
       {
         "title": "Luxury Bridal E-Commerce",
         "categories": ["WordPress", "Bricks Builder", "WooCommerce","ACSS","PHP","Custom CSS","Figma","PageSpeed Tools"],
-        "image": "/src/assets/images/portfolio2.png",
+        "image": "/assets/images/portfolio2.png",
         "link": "https://marryandbride.com/"
       },
       {
         "title": "B2B Enterprise Site | ACF | CMS",
         "categories": ["WordPress", "Bricks Builder", "WooCommerce","ACSS","PHP","Custom CSS","Figma","PageSpeed Tools"],
-        "image": "/src/assets/images/portfolio3.png",
+        "image": "/assets/images/portfolio3.png",
         "link": "https://www.teads.com/"
       },
       {
         "title": "AI-Powered K-12 EdTech Platform",
         "categories": ["WordPress", "Bricks Builder", "WooCommerce","ACSS","PHP","Custom CSS","Figma","PageSpeed Tools"],
-        "image": "/src/assets/images/portfolio4.png",
+        "image": "/assets/images/portfolio4.png",
         "link": "https://temp.nafaais.com/"
       },
       {
         "title": "The Laundry Club",
         "categories": ["WordPress", "PSD to WordPress","Elementor Pro"],
-        "image": "/src/assets/images/portfolio5.png",
+        "image": "/assets/images/portfolio5.png",
         "link": "https://austinsammon-yencv.wpcomstaging.com/"
       }
     ],
@@ -133,10 +133,10 @@
       { "label": "Years of experience", "value": "7", "suffix": "+" }
     ],
     "clients": [
-      "/src/assets/images/client-logo1.png",
-      "/src/assets/images/client-logo2.png",
-      "/src/assets/images/client-logo3.svg",
-      "/src/assets/images/client-logo4.png"
+      "/assets/images/client-logo1.png",
+      "/assets/images/client-logo2.png",
+      "/assets/images/client-logo3.svg",
+      "/assets/images/client-logo4.png"
     ]
   },
   "resume": {
@@ -186,33 +186,33 @@
         "title": "Professional WordPress Developer – Advanced Web Solutions",
         "status": "ITSTAKES",
         "year": "2025",
-        "logo": "/src/assets/images/awwwards-logo.png",
+        "logo": "/assets/images/awwwards-logo.png",
         "description": "This certification demonstrates advanced proficiency as a WordPress Developer, with expertise in: Custom WordPress themes and plugin development Elementor Pro and Bricks Builder advanced layouts ACSS-powered modular CSS systems for reusable, scalable designs Dynamic content creation using ACF and JetEngine WooCommerce setup and optimization for online stores Performance, SEO, and mobile responsiveness optimization Holders of this certification are skilled in delivering secure, high-performing, and maintainable WordPress websites for clients worldwide, capable of implementing scalable, component-based architectures and modern web development best practices."
       },
       {
         "title": "Elementor Expert Certification",
         "status": "Elementor",
         "year": "2025",
-        "logo": "/src/assets/images/webbyawards-logo.png",
+        "logo": "/assets/images/webbyawards-logo.png",
         "description": "Completed the official Elementor Expert Certification, demonstrating advanced proficiency in WordPress website design and development using Elementor and Elementor Pro. This certification covers: — Advanced Elementor page building techniques — Responsive design and mobile-first development — Custom layouts, widgets, and design systems — Performance optimization within Elementor — WooCommerce integration using Elementor Pro — Dynamic content and template management As a certified Elementor Expert with 7 years of WordPress development experience, I have applied these skills across 76+ client projects — building high-converting landing pages, full business websites, and eCommerce stores using Elementor and Elementor Pro."
       },
       {
         "title": "Bricks Builder Developer Certification",
         "status": "Bricks Builder Academy",
         "year": "2023",
-        "logo": "/src/assets/images/fwa-logo.png",
+        "logo": "/assets/images/fwa-logo.png",
         "description": "Completed the official Bricks Builder Developer Certification through Bricks Builder Academy, demonstrating expert-level proficiency in WordPress website development using Bricks Builder. This certification covers: — Advanced Bricks Builder layout and design techniques — Dynamic data and custom content using ACF and JetEngine — ACSS (Automatic CSS) integration for scalable styling systems — Responsive and mobile-first WordPress development — Performance-focused WordPress builds using Bricks Builder — Custom query loops, dynamic templates, and reusable components As a certified Bricks Builder Developer with 7 years of WordPress experience, I specialize in building fast, scalable, and fully custom WordPress websites using Bricks Builder — for agencies, small businesses, coaches, and enterprise clients worldwide."
       }
     ],
     "skills": [
-      { "name": "WordPress", "percentage": "95", "icon": "/src/assets/images/wordpress-logo.svg" },
-      { "name": "Elementor", "percentage": "95", "icon": "/src/assets/images/elementor-logo.png" },
-      { "name": "CMS Development", "percentage": "90", "icon": "/src/assets/images/cms-logo.png" },
-      { "name": "PSD to WordPress", "percentage": "85", "icon": "/src/assets/images/figma-logo.svg" },
-      { "name": "PHP", "percentage": "85", "icon": "/src/assets/images/php-logo.png" },
-      { "name": "Html", "percentage": "100", "icon": "/src/assets/images/html5-logo.svg" },
-      { "name": "CSS", "percentage": "95", "icon": "/src/assets/images/css3-logo.svg" },
-      { "name": "Javascript", "percentage": "80", "icon": "/src/assets/images/javascript-logo.svg" }
+      { "name": "WordPress", "percentage": "95", "icon": "/assets/images/wordpress-logo.svg" },
+      { "name": "Elementor", "percentage": "95", "icon": "/assets/images/elementor-logo.png" },
+      { "name": "CMS Development", "percentage": "90", "icon": "/assets/images/cms-logo.png" },
+      { "name": "PSD to WordPress", "percentage": "85", "icon": "/assets/images/figma-logo.svg" },
+      { "name": "PHP", "percentage": "85", "icon": "/assets/images/php-logo.png" },
+      { "name": "Html", "percentage": "100", "icon": "/assets/images/html5-logo.svg" },
+      { "name": "CSS", "percentage": "95", "icon": "/assets/images/css3-logo.svg" },
+      { "name": "Javascript", "percentage": "80", "icon": "/assets/images/javascript-logo.svg" }
     ]
   },
   "blog": {
@@ -223,7 +223,7 @@
         "category": "Development",
         "title": "Inventore voluptas sapiente deleniti molestias ipsam totam ipsa odit",
         "excerpt": "Officiis distinctio quia accusamus sit quae dignissimos numquam, impedi quas...",
-        "image": "/src/assets/images/blog-img1.jpg",
+        "image": "/assets/images/blog-img1.jpg",
         "link": "#"
       },
       {
@@ -231,7 +231,7 @@
         "category": "Reactjs",
         "title": "Consequatur quam rerum deserunt omnis reprehenderit doloribus aperiam",
         "excerpt": "Officiis distinctio quia accusamus sit quae dignissimos numquam, impedi quas...",
-        "image": "/src/assets/images/blog-img2.jpg",
+        "image": "/assets/images/blog-img2.jpg",
         "link": "#"
       },
       {
@@ -239,7 +239,7 @@
         "category": "Design",
         "title": "Sed fringilla pulvinar vel facilis fugiat quibusdam odio vitae mollis.",
         "excerpt": "Officiis distinctio quia accusamus sit quae dignissimos numquam, impedi quas...",
-        "image": "/src/assets/images/blog-img3.jpg",
+        "image": "/assets/images/blog-img3.jpg",
         "link": "#"
       }
     ]

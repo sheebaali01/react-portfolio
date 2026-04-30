@@ -35,10 +35,10 @@ const Header = () => {
   return (
     <header id="header" className="header-v2 d-flex transition">
       <a className="navbar-brand" href="#">
-        <img src="/src/assets/images/boka-logo.png" alt="" />
+        <img src="/assets/images/boka-logo.png" alt="" />
       </a>
       <div className="header-img-hold z-index-1 bg-black">
-        <img className="w-100 h-100 img-cover" src="/src/assets/images/hero.jpeg" alt="" />
+        <img className="w-100 h-100 img-cover" src="/assets/images/hero.jpeg" alt="" />
       </div>
       <div className="header-content d-flex flex-column align-items-start justify-content-end z-index-2">
         <h1 className="mb-2 text-uppercase">{personalInfo.name}</h1>

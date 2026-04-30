@@ -159,7 +159,7 @@ const Portfolio = ({ isActive, setActiveSection }) => {
               <span className="arrow outline"><i className="fa-solid fa-arrow-right"></i></span>
             </h2>
             <div className="page-nav-icon">
-              <img src="/src/assets/images/services-icon.png" alt="" />
+              <img src="/assets/images/services-icon.png" alt="" />
             </div>
           </a>
           <a
@@ -179,7 +179,7 @@ const Portfolio = ({ isActive, setActiveSection }) => {
               <span className="arrow outline"><i className="fa-solid fa-arrow-right"></i></span>
             </h2>
             <div className="page-nav-icon">
-              <img src="/src/assets/images/resume-icon.png" alt="" />
+              <img src="/assets/images/resume-icon.png" alt="" />
             </div>
           </a>
         </div>

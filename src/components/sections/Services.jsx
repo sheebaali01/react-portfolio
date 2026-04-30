@@ -120,7 +120,7 @@ const Services = ({ isActive, setActiveSection }) => {
               <span className="arrow outline"><i className="fa-solid fa-arrow-right"></i></span>
             </h2>
             <div className="page-nav-icon">
-              <img src="/src/assets/images/about-icon.png" alt="" />
+              <img src="/assets/images/about-icon.png" alt="" />
             </div>
           </a>
           <a
@@ -140,7 +140,7 @@ const Services = ({ isActive, setActiveSection }) => {
               <span className="arrow outline"><i className="fa-solid fa-arrow-right"></i></span>
             </h2>
             <div className="page-nav-icon">
-              <img src="/src/assets/images/portfolio-icon.png" alt="" />
+              <img src="/assets/images/portfolio-icon.png" alt="" />
             </div>
           </a>
         </div>

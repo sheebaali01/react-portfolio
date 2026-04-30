@@ -28,10 +28,10 @@ const About = ({ isActive, setActiveSection }) => {
               <div className="col-lg-6 animate-child">
                 <div className="about-img-container position-relative w-100 h-100 rounded-5 overflow-hidden shadow">
                   <div className="about-img-hold position-relative w-100 h-100 z-index-1">
-                    <img src="/src/assets/images/about-img.webp" alt="" className="w-100 h-100 img-cover" />
+                    <img src="/assets/images/about-img.webp" alt="" className="w-100 h-100 img-cover" />
                   </div>
                   <div className="signature-hold position-absolute z-index-2">
-                    <img src="/src/assets/images/signature.png" alt="" />
+                    <img src="/assets/images/signature.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const About = ({ isActive, setActiveSection }) => {
               <span className="arrow outline"><i className="fa-solid fa-arrow-right"></i></span>
             </h2>
             <div className="page-nav-icon">
-              <img src="/src/assets/images/contact-icon.png" alt="" />
+              <img src="/assets/images/contact-icon.png" alt="" />
             </div>
           </a>
           <a
@@ -133,7 +133,7 @@ const About = ({ isActive, setActiveSection }) => {
               <span className="arrow outline"><i className="fa-solid fa-arrow-right"></i></span>
             </h2>
             <div className="page-nav-icon">
-              <img src="/src/assets/images/services-icon.png" alt="" />
+              <img src="/assets/images/services-icon.png" alt="" />
             </div>
           </a>
         </div>
