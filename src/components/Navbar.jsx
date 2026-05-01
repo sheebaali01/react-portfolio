@@ -32,6 +32,7 @@ const Navbar = ({ activeSection, setActiveSection, navOpen, setNavOpen }) => {
 
   const handleBackToMenu = (e) => {
     e.preventDefault();
+    gsap.set('.hero-heading', { clearProps: 'all' });
     setActiveSection(null);
     document.body.classList.remove('page-active');
     window.scrollTo({ top: 0, behavior: 'instant' });

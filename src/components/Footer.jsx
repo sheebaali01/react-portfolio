@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import portfolioData from '../data/portfolio.json';
 
 const Footer = () => {
-  const [isDark, setIsDark] = useState(document.body.classList.contains('dark-theme'));
+  const [isDark, setIsDark] = useState(() => localStorage.getItem('theme') !== 'light');
 
   const toggleTheme = (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ const Footer = () => {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
+    if (savedTheme !== 'light') {
       document.body.classList.add('dark-theme');
       setIsDark(true);
     }

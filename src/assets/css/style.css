@@ -11174,6 +11174,7 @@ body:not([class~=page-active]) main {
 
 [class~=portfolio-title] h2 {
     font-size: 60pt;
+    margin-bottom: 50px !important;
 }
 
 [class~=portfolio-item]:not([class~=swiper-slide-active]) [class~=portfolio-category] span,
@@ -12590,6 +12591,40 @@ textarea[class~=form-control]:focus {
 .swiper-button-next:hover:after {
     color: var(--boka-body-bg) !important;
 }
+
+.portfolio-slider-container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.portfolio-slider-container .portfolio-slider {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-bottom: 0 !important;
+}
+
+.portfolio-slider-container .portfolio-pagination,
+.portfolio-slider-container .portfolio-button-prev,
+.portfolio-slider-container .portfolio-button-next {
+    position: static !important;
+    z-index: 5;
+}
+
+.portfolio-slider-container .portfolio-pagination {
+    grid-column: 1;
+}
+
+.portfolio-slider-container .portfolio-button-prev {
+    grid-column: 2;
+}
+
+.portfolio-slider-container .portfolio-button-next {
+    grid-column: 3;
+}
+
 .social-list .fa-brands{
     font-size: 25px;
 }

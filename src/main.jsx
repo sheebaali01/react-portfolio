@@ -5,6 +5,10 @@ import './assets/css/style.css'
 import App from './App.jsx'
 import { PortfolioProvider } from './context/PortfolioContext.jsx'
 
+if (localStorage.getItem('theme') !== 'light') {
+  document.body.classList.add('dark-theme')
+}
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <PortfolioProvider>

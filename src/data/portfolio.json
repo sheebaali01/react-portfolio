@@ -13,8 +13,8 @@
       "I'm Sohail, a Full Stack WordPress Developer with hands-on expertise in Bricks Builder, Elementor Pro, Advanced Custom Fields (ACF), JetEngine, PHP, and Laravel. I've helped businesses across e-commerce, real estate, directories, portfolios, and service industries build websites that don't just look great — they work hard for their business."
     ],
     "social": [
-      { "platform": "whatsapp", "url": "#", "icon": "fa-brands fa-whatsapp" },
-      { "platform": "upwork", "url": "#", "icon": "fa-brands fa-upwork" }
+      { "platform": "whatsapp", "url": "", "icon": "fa-brands fa-whatsapp" },
+      { "platform": "upwork", "url": "https://www.upwork.com/freelancers/wordpressdevelopersohail", "icon": "fa-brands fa-upwork" }
     ],
     "scrambleText": [
       "Full-stack wordpress developer",
@@ -108,7 +108,7 @@
         "link": "https://marryandbride.com/"
       },
       {
-        "title": "B2B Enterprise Site | ACF | CMS",
+        "title": "B2B Enterprise Site",
         "categories": ["WordPress", "Bricks Builder", "WooCommerce","ACSS","PHP","Custom CSS","Figma","PageSpeed Tools"],
         "image": "/assets/images/portfolio3.png",
         "link": "https://www.teads.com/"
@@ -134,7 +134,6 @@
     ],
     "clients": [
       "/assets/images/client-logo1.png",
-      "/assets/images/client-logo2.png",
       "/assets/images/client-logo3.svg",
       "/assets/images/client-logo4.png"
     ]

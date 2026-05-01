@@ -35,8 +35,8 @@ const Portfolio = ({ isActive, setActiveSection }) => {
                   <Swiper
                     modules={[Navigation, Pagination]}
                     navigation={{
-                      nextEl: '.swiper-button-next',
-                      prevEl: '.swiper-button-prev',
+                      nextEl: '.portfolio-button-next',
+                      prevEl: '.portfolio-button-prev',
                     }}
                     pagination={{ 
                       type: 'fraction',
