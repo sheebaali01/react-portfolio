@@ -129,7 +129,7 @@ const Contact = ({ isActive, setActiveSection }) => {
         </div>
 
         <div className="page-nav-container d-flex">
-          <a
+          {/* <a
             href="#nav-blog"
             className="page-nav-link page-nav-parent d-flex align-items-end w-100 position-relative overflow-hidden bg-gradient-5 z-index-2"
             data-target="blog-section"
@@ -147,6 +147,26 @@ const Contact = ({ isActive, setActiveSection }) => {
             </h2>
             <div className="page-nav-icon">
               <img src="/assets/images/blog-icon.png" alt="" />
+            </div>
+          </a> */}
+          <a
+            href="#nav-services"
+            className="page-nav-link page-nav-parent d-flex align-items-end w-100 position-relative overflow-hidden bg-gradient-2 z-index-2"
+            data-target="services-section"
+            data-overlay="nav-overlay-services"
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveSection('services');
+              document.body.classList.add('page-active');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+            }}
+          >
+            <h2 className="d-flex transition position-relative">
+              Services
+              <span className="arrow outline"><i className="fa-solid fa-arrow-right"></i></span>
+            </h2>
+            <div className="page-nav-icon">
+              <img src="/assets/images/services-icon.png" alt="" />
             </div>
           </a>
           <a
