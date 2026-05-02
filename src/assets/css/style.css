@@ -10989,9 +10989,12 @@ body:not([class~=page-active]) main {
     background-position-x: 100%;
 }
 
-.service-link sup,
-[class~=service-details] {
+.service-link sup {
     position: absolute;
+}
+
+[class~=service-details] {
+    position: relative;
 }
 
 [class~=dark-theme] [class~=service-link] {
@@ -11063,19 +11066,19 @@ body:not([class~=page-active]) main {
 [class~=service-details],
 [class~=service-link]:not([class~=active]) sup,
 [class~=service-image-box] {
-    opacity: 0;
+    opacity: 1;
 }
 
 [class~=service-details] {
-    width: 80%;
+    width: 100%;
 }
 
 [class~=service-details] {
-    margin-left: -60pt;
+    margin-left: 0;
 }
 
 [class~=service-details] {
-    bottom: -15pt;
+    bottom: 0;
 }
 
 [class~=service-details] {
@@ -11087,7 +11090,7 @@ body:not([class~=page-active]) main {
 }
 
 [class~=service-details] {
-    transform: rotate(5deg);
+    transform: none;
 }
 
 [class~=service-details] {

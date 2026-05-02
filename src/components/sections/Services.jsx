@@ -71,10 +71,7 @@ const Services = ({ isActive, setActiveSection }) => {
                           >
                             <div className="service-details-outer custom-tab-content w-100 h-100 reveal">
                               <div className="service-details-container w-100 h-100 position-relative">
-                                <div className="service-image-box overflow-hidden shadow rounded-5 w-100 transition">
-                                  <img src={item.image} alt="" className="w-100 h-100 img-cover d-none d-lg-block" />
-                                  <img src={item.mobImage} alt="" className="w-100 h-100 img-cover d-lg-none" />
-                                </div>
+
 
                                 <div className="service-details p-4 overflow-hidden shadow rounded-5">
                                   <h4 className="font-primary fw-bold">
