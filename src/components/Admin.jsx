@@ -214,6 +214,16 @@ const Admin = () => {
                             onChange={(e) => handleArrayChange("services.items", idx, "features", e.target.value.split(',').map(f => f.trim()))} 
                           />
                         </div>
+                        <div className="row">
+                          <div className="col-md-6">
+                            {renderInput("Desktop Image Path", `services.items.${idx}.image`, s.image)}
+                            {s.image && <img src={s.image} alt="Preview" style={{ height: '50px', objectFit: 'contain' }} className="mb-3 border border-secondary" />}
+                          </div>
+                          <div className="col-md-6">
+                            {renderInput("Mobile Image Path", `services.items.${idx}.mobImage`, s.mobImage)}
+                            {s.mobImage && <img src={s.mobImage} alt="Preview" style={{ height: '50px', objectFit: 'contain' }} className="mb-3 border border-secondary" />}
+                          </div>
+                        </div>
                         <button className="btn btn-danger btn-sm" onClick={() => removeItem("services.items", idx)}>Delete Service</button>
                       </div>
                     ))}
@@ -239,6 +249,10 @@ const Admin = () => {
                             value={p.categories.join(', ')} 
                             onChange={(e) => handleArrayChange("portfolio.projects", idx, "categories", e.target.value.split(',').map(c => c.trim()))} 
                           />
+                        </div>
+                        <div className="mb-3">
+                          {renderInput("Project Image Path", `portfolio.projects.${idx}.image`, p.image)}
+                          {p.image && <img src={p.image.startsWith('../') ? p.image.substring(2) : p.image} alt="Preview" style={{ height: '80px', objectFit: 'contain' }} className="mb-3 border border-secondary" />}
                         </div>
                         <button className="btn btn-danger btn-sm" onClick={() => removeItem("portfolio.projects", idx)}>Delete Project</button>
                       </div>
@@ -272,6 +286,8 @@ const Admin = () => {
                         <div className="d-flex gap-2 align-items-end">
                           <div className="flex-grow-1">
                             {renderInput(skill.name, `resume.skills.${idx}.percentage`, skill.percentage, "number")}
+                            {renderInput("Icon Path", `resume.skills.${idx}.icon`, skill.icon)}
+                            {skill.icon && <img src={skill.icon} alt="Preview" style={{ height: '30px', objectFit: 'contain' }} className="mb-3 border border-secondary" />}
                           </div>
                           <button className="btn btn-danger btn-sm mb-4" onClick={() => removeItem("resume.skills", idx)}><i className="fa-solid fa-trash"></i></button>
                         </div>
@@ -293,6 +309,10 @@ const Admin = () => {
                         {renderInput("Category", `blog.posts.${idx}.category`, post.category)}
                         {renderInput("Title", `blog.posts.${idx}.title`, post.title)}
                         {renderInput("Excerpt", `blog.posts.${idx}.excerpt`, post.excerpt, "textarea")}
+                        <div className="mb-3">
+                          {renderInput("Blog Image Path", `blog.posts.${idx}.image`, post.image)}
+                          {post.image && <img src={post.image} alt="Preview" style={{ height: '80px', objectFit: 'contain' }} className="mb-3 border border-secondary" />}
+                        </div>
                         <button className="btn btn-danger btn-sm" onClick={() => removeItem("blog.posts", idx)}>Delete Post</button>
                       </div>
                     ))}

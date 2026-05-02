@@ -12628,3 +12628,88 @@ textarea[class~=form-control]:focus {
 .social-list .fa-brands{
     font-size: 25px;
 }
+
+/* Contact Icons Styles */
+.contact-icons-grid {
+    margin-top: 20px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    background: var(--boka-white);
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 16px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+body.dark-theme .contact-card {
+    background: #252631;
+    border-color: rgba(255,255,255,0.05);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-color: var(--boka-theme-color-2);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 24px;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.contact-card.upwork .card-icon { background: rgba(20, 168, 0, 0.1); color: #14a800; }
+.contact-card.email .card-icon { background: rgba(123, 51, 233, 0.1); color: #7b33e9; }
+.contact-card.whatsapp .card-icon { background: rgba(37, 211, 102, 0.1); color: #25d366; }
+.contact-card.call .card-icon { background: rgba(0, 185, 96, 0.1); color: #00b960; }
+
+.contact-card:hover .card-icon {
+    transform: scale(1.1);
+}
+
+.card-info span {
+    display: block;
+    font-family: var(--boka-primary-font);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--boka-body-color);
+    opacity: 0.6;
+    margin-bottom: 4px;
+}
+
+.card-info p {
+    font-family: var(--boka-secondary-font);
+    font-size: 18px;
+    color: var(--boka-body-color);
+    margin: 0;
+    word-break: break-all;
+}
+
+@media (max-width: 575.98px) {
+    .contact-card {
+        padding: 16px;
+    }
+    .card-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .card-info p {
+        font-size: 14px;
+    }
+}
+

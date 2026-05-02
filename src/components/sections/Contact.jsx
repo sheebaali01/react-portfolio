@@ -16,12 +16,12 @@ const Contact = ({ isActive, setActiveSection }) => {
                   <div className="col-lg-11 animate-child">
                     <h2 className="page-heading mb-48 mob-mb-24 text-clip bg-gradient-6">{contact.heading}</h2>
                   </div>
-                  <div className="col-lg-6 ms-auto opacity-75">
+                  {/* <div className="col-lg-6 ms-auto opacity-75">
                     <div className="animate-child">
                       <p>Quis voluptatibus inventore exercitationem harum minus obcaecati officiis distinctio quia accusamus sit quae.</p>
                       <p>Harum placeat iusto, eius esse eaque natus rerum praesentium debitis..</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-lg-12">
@@ -30,49 +30,42 @@ const Contact = ({ isActive, setActiveSection }) => {
                     <h5 className="opacity-75">{contact.subheading}</h5>
                   </div>
                   <div className="col-lg-7 ms-auto">
-                    <div className="form-container">
-                      <form method="post" action="#" id="messageForm">
-                        <div className="mb-4">
-                          <label htmlFor="name" className="form-label">Name</label>
-                          <input type="text" name="name" className="form-control" id="name" required />
-                        </div>
-
-                        <div className="mb-4">
-                          <label htmlFor="email" className="form-label">Email address</label>
-                          <input type="email" name="email" className="form-control" id="email" required />
-                        </div>
-
-                        <div className="mb-4">
-                          <label htmlFor="phone" className="form-label">Phone</label>
-                          <input type="tel" name="phone" className="form-control" id="phone" required />
-                        </div>
-
-                        <div className="mb-4">
-                          <label htmlFor="message" className="form-label">Message</label>
-                          <textarea className="form-control" name="message" id="message" rows="3" required></textarea>
-                        </div>
-
-                        <div className="mb-4 form-check ps-0">
-                          <input type="checkbox" className="form-check-input" id="agree" name="agree" required />
-                          <label htmlFor="agree" className="form-check-label">By sending the form you agree to the Terms &amp; Conditions and Privacy Policy.</label>
-                          <label htmlFor="agree" className="error block"></label>
-                        </div>
-                        <div className="position-relative">
-                          <button type="submit" className="link link-xxl text-body-color" data-text="Submit">
-                            <span>Submit</span>
-                          </button>
-                          <div className="loading" style={{ display: 'none' }}></div>
-                        </div>
-                      </form>
-                      <div className="messgaeOutput" id="messgaeOutput">
-                        <div id="success">
-                          <h4>Thank you!</h4>
-                          <p>Your message was sent successfully! I will be in touch as soon as I can.</p>
-                        </div>
-                        <div id="error">
-                          <h4>Opppsss..... Sorry!</h4>
-                          <p>Something went wrong, try refreshing and submitting the form again.</p>
-                        </div>
+                    <div className="contact-icons-grid row g-4">
+                      <div className="col-sm-6">
+                        <a href="https://www.upwork.com/freelancers/wordpressdevelopersohail" target="_blank" rel="noopener noreferrer" className="contact-card upwork">
+                          <div className="card-icon"><i className="fa-brands fa-upwork"></i></div>
+                          <div className="card-info">
+                            <span>Upwork</span>
+                            <p>Hire Me</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-sm-6">
+                        <a href={`mailto:${contact.email}`} className="contact-card email">
+                          <div className="card-icon"><i className="fa-solid fa-envelope"></i></div>
+                          <div className="card-info">
+                            <span>Email</span>
+                            <p>{contact.email}</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-sm-6">
+                        <a href="https://wa.me/+923368247274" target="_blank" rel="noopener noreferrer" className="contact-card whatsapp">
+                          <div className="card-icon"><i className="fa-brands fa-whatsapp"></i></div>
+                          <div className="card-info">
+                            <span>WhatsApp</span>
+                            <p>Chat Now</p>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-sm-6">
+                        <a href={`tel:${contact.phone.replace(/\s/g, '')}`} className="contact-card call">
+                          <div className="card-icon"><i className="fa-solid fa-phone"></i></div>
+                          <div className="card-info">
+                            <span>Call</span>
+                            <p>{contact.phone}</p>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -86,7 +79,7 @@ const Contact = ({ isActive, setActiveSection }) => {
               </div>
             </div>
             <div className="row g-4 animate-child">
-              <div className="col-lg-4">
+              {/* <div className="col-lg-4">
                 <div className="quick-contact">
                   <h6 className="text-clip bg-gradient-6 mb-0 font-primary fw-bold">Call me</h6>
                   <p>
@@ -101,7 +94,7 @@ const Contact = ({ isActive, setActiveSection }) => {
                     <a href={`mailto:${contact.email}`} className="link text-body-color" data-text={contact.email}><span>{contact.email}</span></a>
                   </p>
                 </div>
-              </div>
+              </div> */}
               <div className="col-lg-4">
                 <div className="quick-contact">
                   <h6 className="text-clip bg-gradient-6 mb-0 font-primary fw-bold">Meet me</h6>

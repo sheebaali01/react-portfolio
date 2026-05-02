@@ -55,7 +55,7 @@
         "title": "WordPress",
         "description": "Custom WordPress websites built with a focus on performance, scalability, and clean architecture. From simple sites to complex dynamic builds.",
         "features": ["Elementor", "Bricks Builder", "Oxygen", "ACF", "ACSS", "Custom Themes"],
-        "image": "/assets/images/service1.jpg",
+        "image": "/assets/images/service1.png",
         "mobImage": "/assets/images/service1-mob.jpg"
       },
       {
